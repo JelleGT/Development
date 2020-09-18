@@ -1,13 +1,22 @@
+html {
+  font-family: 'Poppins', sans-serif;
+}
 body {
-  background-color: #240430;
+  background-color: #eae0cc;
   color: white;
   padding: 0px;
   margin: 0px;
 }
 header {
-  background-color: #5A0A78;
+  background-color: #3d005b;
   width: 100%;
-  height: 200px;
+  height: 80px;
+  line-height: 80px;
+}
+#logo {
+  text-align: center;
+  font-size: 30px;
+  margin: auto;
 }
 a:link {
   color: white;
@@ -15,11 +24,15 @@ a:link {
 a:visited {
   color: black;
 }
-article {
-  background-color: #010754;
-  width: 100%;
-  height: 700px;
+.item {
+  background-color: #660099;
+  height: 200px;
+  margin: 10px;
 }
-p {
-  margin: 0;
+footer {
+  position: sticky;
+  bottom: 0;
+  background-color: #d1b2e0;
+  height: 80px;
+  width: 100%;
 }
