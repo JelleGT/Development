@@ -15,8 +15,24 @@ window.onload = function() {
         {vorm:"balk", lengte:2, breedte:1, hoogte:2},
         {vorm:"balk", lengte:7, breedte:6, hoogte:5}
     ];
-
+//twee arrays met meerdere objecten
     const pi = 3.14;
     var vormen = [...balken, ...cilinders];
+    //voegt de arrays samen
+    berekenGrootte = ({diameter, hoogte}) => diameter*hoogte;
+    //grootte van de cilinders
+    berekenInhoud = ({lengte, breedte, hoogte}) => lengte*breedte*hoogte;
+    //inhoud van de balken
     vormen.forEach(element => console.log(element));
+    //loopt door alle objecten in de samengevoegde array
+    for (i=0; i < cilinders.length; i++) {
+      var grootte = berekenGrootte(cilinders[i]);
+      console.log(grootte);
+    }
+    //berekent de grootte per cilinder en loop ze op volgorde af
+    for (i=0; i < balken.length; i++) {
+      var inhoud = berekenInhoud(balken[i]);
+      console.log(inhoud);
+    }
+      //berekent de inhoud per balk en loop ze op volgorde af
 }
