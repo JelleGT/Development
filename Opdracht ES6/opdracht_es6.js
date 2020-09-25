@@ -27,12 +27,12 @@ window.onload = function() {
     //loopt door alle objecten in de samengevoegde array
     for (i=0; i < cilinders.length; i++) {
       var grootte = berekenGrootte(cilinders[i]);
-      console.log(grootte);
+      console.log('de totale inhoud van cilinder ' + i + ' is ' + grootte + '');
     }
     //berekent de grootte per cilinder en loop ze op volgorde af
     for (i=0; i < balken.length; i++) {
       var inhoud = berekenInhoud(balken[i]);
-      console.log(inhoud);
+      console.log('de totale inhoud van balk ' + i + ' is ' + inhoud);
     }
       //berekent de inhoud per balk en loop ze op volgorde af
 }
