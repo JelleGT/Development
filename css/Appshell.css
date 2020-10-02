@@ -2,40 +2,17 @@ html {
   font-family: 'Poppins', sans-serif;
 }
 body {
-  background-color: #eae0cc;
+  background-color: #240430;
   color: white;
   padding: 0px;
   margin: 0px;
 }
-header {
-  background-color: #3d005b;
-  width: 100%;
-  height: 80px;
-  line-height: 80px;
+#bar {
+  background-color: #5A0A78;
 }
-#logo {
-  text-align: center;
-  font-size: 30px;
-  margin: auto;
+#content {
+  background-color: #010754;
 }
-a:link {
-  color: white;
-}
-a:visited {
-  color: black;
-}
-.item {
-  background-color: #660099;
-  height: 200px;
-  margin: 10px;
-}
-footer {
-  position: sticky;
-  bottom: 0;
-  background-color: #d1b2e0;
-  height: 80px;
-  width: 100%;
-}
-footer i {
-  font-size: 70px;
+#navigation {
+  background-color: #5A0A78
 }
