@@ -5,7 +5,7 @@ fetch(url)
   .then(response => response.json())
   .then(data => {
     console.log(data);
-    data.books.map(book => {
+    data.results.books.map(book => {
       console.log(book.title);
     })
   })
