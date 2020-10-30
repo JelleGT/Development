@@ -6,16 +6,15 @@
     <link href="css/skeleton.css" rel="stylesheet"/>
     <link href="css/ClockCase.css" rel="stylesheet"/>
   </head>
-  <body>
+  <body onload="startDeTijd()">
     <main>
       <section>
         <img id="klok" src="images/clock.png" alt="Klok" />
         <h1>Alarm Clock</h1>
-        <div id="datum">
-          <p>30-10-2020 FRI</p>
-        </div>
-        <h2>18:35.12</h2>
-        <img id="activiteit" src="images/read.png" alt="activiteit" />
+        <p id="datum">30-10-2020 FRI</p>
+        <h2 id="tijd"></h2>
+        <img id="activiteit" src="images/lunch.png" alt="activiteit" />
+        <script src="ClockGears.js"></script>
       </section>
     </main>
   </body>
