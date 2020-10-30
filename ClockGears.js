@@ -3,8 +3,14 @@ function startDeTijd() {
   var h = vandaag.getHours();
   var m = vandaag.getMinutes();
   var s = vandaag.getSeconds();
+  var y = vandaag.getFullYear();
+  var n = vandaag.getMonth();
+  var d = vandaag.getDate();
   m = checkTime(m);
   s = checkTime(s);
+  var dagen = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  document.getElementById('datum').innerHTML =
+  d + "-" + n + "-" + y + " " + dagen[vandaag.getDay()].substring(0,3).toUpperCase();
   document.getElementById('tijd').innerHTML =
   h + ":" + m + ":" + s;
   var t = setTimeout(startDeTijd, 500);
