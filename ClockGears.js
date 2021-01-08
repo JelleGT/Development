@@ -13,9 +13,10 @@ function startDeTijd() {
   d + "-" + n + "-" + y + " " + dagen[vandaag.getDay()].substring(0,3).toUpperCase();
   document.getElementById('tijd').innerHTML =
   h + ":" + m + ":" + s;
-  var t = setTimeout(startDeTijd, 500);
-  $(document).ready(function() {
-    setInterval(function(){
+  var t = setTimeout(startDeTijd, 1000);
+  //$(document).ready(function() {
+  //  setInterval(function(){
+      console.log("plaatje.herladen");
         if (h > 11 && h <= 12)
         {
            document.getElementById("activiteit").src = "Images/lunch.png";
@@ -27,8 +28,8 @@ function startDeTijd() {
         else {
           document.getElementById("activiteit").src = "Images/read.png";
         }
-    });
-});
+    //});
+//}, 1000);
 }
 function checkTime(x) {
   if (x < 10) {x = "0" + x};
