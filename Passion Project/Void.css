@@ -8,21 +8,45 @@ body {
   background-color: #03010D;
   text-align: center;
 }
-h1 {
-  font-size: 40px;
-}
-h2 {
-  font-size: 30px;
-  font-weight: lighter;
-}
-h3 {
-  font-size: 24px;
-  font-weight: lighter;
-}
+/*Alles voor de eerste intropagina*/
 #intro {
   position: absolute;
   width: 100%;
   top: 50%;
   line-height: 30px;
   transform: translateY(-50%)
+}
+h1 {
+  font-size: 40px;
+}
+#title {
+  -webkit-animation: 3s ease 0s normal forwards 1 fadein;
+  animation: 3s ease 0s normal forwards 1 fadein;
+}
+h2 {
+  font-size: 30px;
+}
+#about {
+  font-weight: lighter;
+  -webkit-animation: 3s ease 0s normal forwards 1 fadein;
+  animation: 6s ease 0s normal forwards 1 fadein;
+}
+#name {
+  font-weight: lighter;
+  -webkit-animation: 3s ease 0s normal forwards 1 fadein;
+  animation: 9s ease 0s normal forwards 1 fadein;
+}
+h3 {
+  font-size: 24px;
+  font-weight: lighter;
+}
+@keyframes fadein{
+    0% { opacity:0; }
+    35% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes fadein{
+    0% { opacity:0; }
+    35% { opacity:0; }
+    100% { opacity:1; }
 }
