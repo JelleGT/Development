@@ -17,14 +17,14 @@ body {
   transform: translateY(-50%)
 }
 h1 {
-  font-size: 40px;
+  font-size: 30px;
 }
 #title {
   -webkit-animation: 3s ease 0s normal forwards 1 fadein;
   animation: 3s ease 0s normal forwards 1 fadein;
 }
 h2 {
-  font-size: 30px;
+  font-size: 24px;
 }
 #about {
   font-weight: lighter;
@@ -37,7 +37,7 @@ h2 {
   animation: 9s ease 0s normal forwards 1 fadein;
 }
 h3 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: lighter;
 }
 @keyframes fadein{
@@ -49,4 +49,25 @@ h3 {
     0% { opacity:0; }
     35% { opacity:0; }
     100% { opacity:1; }
+}
+
+/*Alles voor de selectiepagina*/
+#selection {
+display: flex;
+height: 140vh;
+justify-content: center;
+transform: rotate(20deg) translateY(-15%);
+}
+.select {
+  width: 200px;
+  border: 5px #D4D4D4 solid;
+  line-height: 100vh
+}
+.select h1 {
+  transform: rotate(-90deg);
+  margin-top: 250px;
+}
+.select:hover {
+  background-color: #360051;
+  border: 5px #360051 solid;
 }
