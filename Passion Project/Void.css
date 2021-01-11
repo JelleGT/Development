@@ -9,6 +9,11 @@ body {
   text-align: center;
   margin: 0px;
 }
+section {
+  margin: auto;
+  width: 80%;
+}
+
 /*Alles voor de eerste intropagina*/
 #intro {
   position: absolute;
@@ -26,6 +31,7 @@ h1 {
 }
 h2 {
   font-size: 24px;
+  color: white;
 }
 #about {
   font-weight: lighter;
@@ -54,13 +60,11 @@ h3 {
 
 /*Alles voor de selectiepagina*/
 #selection {
-display: flex;
+display: none;
 height: 100vh;
 justify-content: center;
 line-height: 100vh;
 top: 0;
--webkit-animation: 3s ease 0s normal forwards 1 fadein;
-animation: 3s ease 0s normal forwards 1 fadein;
 }
 .select {
   transition: all .5s ease;
@@ -82,9 +86,44 @@ a {
 
 /*Alles voor de drie verschillende pagina's*/
 button {
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  margin: auto;
   width: 500px;
   height: 100px;
   border: 1px #D4D4D4 solid;
   border-radius: 0px;
   background-color: #03010D;
+}
+button:hover {
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  background-color: #360051;
+}
+#creatures:hover {
+  border-right-color: #D4D4D4
+}
+
+.item {
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  margin-top: 100px;
+  width: 400px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 60px;
+  border: 1px #03010D solid;
+}
+.item:hover {
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  background-color: #080519;
+  border: 1px #F1F1F1 solid;
+}
+#characterSelection {
+  flex-wrap: wrap;
+}
+.display {
+  display: none;
 }
