@@ -100,10 +100,6 @@ button:hover {
   -webkit-transition: all .5s ease;
   background-color: #360051;
 }
-#creatures:hover {
-  border-right-color: #D4D4D4
-}
-
 .item {
   transition: all .5s ease;
   -webkit-transition: all .5s ease;
@@ -121,9 +117,19 @@ button:hover {
   background-color: #080519;
   border: 1px #F1F1F1 solid;
 }
-#characterSelection {
+#characterSelection, #worldSelection, #creatureSelection {
+  display: flex;
   flex-wrap: wrap;
 }
 .display {
   display: none;
+}
+img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  overflow: hidden;
 }
