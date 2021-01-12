@@ -8,6 +8,9 @@ $(document).ready(function(){
   $("button").click(function(){
     $(".display").fadeOut(500);
   });
+  $(".item").click(function(){
+    $(".display").fadeOut(500);
+  });
 });
 
 

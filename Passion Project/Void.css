@@ -2,6 +2,17 @@
   font-family: Leelawadee;
   src: url(LeelawUI.ttf);
 }
+* {
+  color: white;
+}
+p {
+  margin-top: 50px;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
 body {
   font-family: Leelawadee;
   color: white;
@@ -13,6 +24,7 @@ section {
   margin: auto;
   width: 80%;
 }
+
 
 /*Alles voor de eerste intropagina*/
 #intro {
@@ -58,6 +70,7 @@ h3 {
     100% { opacity:1; }
 }
 
+
 /*Alles voor de selectiepagina*/
 #selection {
 display: none;
@@ -84,6 +97,7 @@ a {
   text-decoration: none;
 }
 
+
 /*Alles voor de drie verschillende pagina's*/
 button {
   transition: all .5s ease;
@@ -99,6 +113,7 @@ button:hover {
   transition: all .5s ease;
   -webkit-transition: all .5s ease;
   background-color: #360051;
+  cursor: pointer;
 }
 .item {
   transition: all .5s ease;
@@ -116,6 +131,7 @@ button:hover {
   -webkit-transition: all .5s ease;
   background-color: #080519;
   border: 1px #F1F1F1 solid;
+  cursor: pointer;
 }
 #characterSelection, #worldSelection, #creatureSelection {
   display: flex;
@@ -124,7 +140,7 @@ button:hover {
 .display {
   display: none;
 }
-img {
+#creatureSelection img {
   margin-left: auto;
   margin-right: auto;
   margin-top: 100px;
@@ -132,4 +148,51 @@ img {
   height: 400px;
   object-fit: cover;
   overflow: hidden;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#twoButtons button{
+  margin: 0px;
+}
+
+/*Alles voor de character pagina*/
+.charSection {
+  display: none;
+}
+#armonosTakosh {
+  display: block;
+}
+.characterInfo {
+  width: 750px;
+}
+.characterImage {
+  height: 550px;
+  margin-top: 50px;
+}
+@media only screen and (max-width: 900px) {
+  .characterInfo {
+    width: 500px;
+  }
+  .characterImage {
+    height: 400px;
+  }
+  nav {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .characterInfo {
+    width: 300px;
+  }
+  .characterImage {
+    height: 200px;
+  }
+}
+#characterwindow {
+  margin-left: auto;
+  margin-right: auto;
 }
