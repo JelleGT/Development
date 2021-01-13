@@ -1,4 +1,4 @@
-var character = "placeholder"
-function setCharacter(clicked_id){
-  console.log(clicked_id);
-}
+//Laat de sectie van het karakter zien van de karakterknop, waarop is gedrukt bij de vorige pagina
+document.getElementById(currentCharacter).style.display = "block";
+document.getElementById(currentCharacter + "Name").style.display = "block";
+console.log(currentCharacter + "Name");

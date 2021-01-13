@@ -162,8 +162,10 @@ nav {
 .charSection {
   display: none;
 }
-#armonosTakosh {
-  display: block;
+.characterName {
+  display: none;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .characterInfo {
   margin-bottom: 50px;

@@ -19,10 +19,8 @@ function delay (URL) {
     setTimeout( function() { window.location = URL }, 1200 );
 }
 
-var character = "placeholder"
-console.log(character);
+var character = "placeholder character"
+var currentCharacter = sessionStorage.getItem(character);
 function setCharacter(clicked_id){
   sessionStorage.setItem(character, clicked_id);
-  console.log(sessionStorage.getItem(character));
 }
-console.log(sessionStorage.getItem(character));
