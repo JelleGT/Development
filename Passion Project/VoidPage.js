@@ -28,3 +28,9 @@ var currentCharacter = sessionStorage.getItem(character);
 function setCharacter(clicked_id){
   sessionStorage.setItem(character, clicked_id);
 }
+//Maakt een variabele aan die onthouden wordt in deze sessie, en wordt in world.js gebruikt om de geklikte wereld te laden.
+var world = "placeholder world"
+var currentWorld = sessionStorage.getItem(world);
+function setWorld(clicked_id){
+  sessionStorage.setItem(world, clicked_id);
+}
