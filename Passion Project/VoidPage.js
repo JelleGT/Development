@@ -11,6 +11,9 @@ $(document).ready(function(){
   $(".item").click(function(){
     $(".display").fadeOut(500);
   });
+  $("a").click(function(){
+    $(".display").fadeOut(500);
+  });
 });
 
 
@@ -19,6 +22,7 @@ function delay (URL) {
     setTimeout( function() { window.location = URL }, 1200 );
 }
 
+//Maakt een variabele aan die onthouden wordt in deze sessie, en wordt in character.js gebruikt om het geklikte karakter te laden.
 var character = "placeholder character"
 var currentCharacter = sessionStorage.getItem(character);
 function setCharacter(clicked_id){
