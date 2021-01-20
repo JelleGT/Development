@@ -1,0 +1,111 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  margin: 0;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #C93A3C;
+  text-align: center;
+  padding-top: 50px;
+}
+h2 {
+  font-size: 14px;
+  color: #C93A3C;
+  text-align: center;
+  margin-top: 30px;
+}
+form {
+  width: 500px;
+  margin: auto;
+}
+/*Iedere knop van de zoekbalk*/
+.zoekKnop {
+  font-size: 24px;
+}
+/*De balk om een zoekopdracht bij in te vullen*/
+#zoekInput {
+  font-size: 24px;
+  font-style: oblique;
+}
+/*De sectie voor de donaties*/
+#doneren {
+  background-color: rgba(247, 174, 192, 0.7);
+  max-width: 550px;
+}
+#doneren p {
+  margin: auto;
+  margin-bottom: 14px;
+  width: 360px;
+}
+#doneren ul {
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 180px;
+}
+#doneren li {
+  margin-top: 50px;
+  font-weight: bold;
+}
+#bedragKnoppen {
+  display: flex;
+}
+.bedragKnop {
+  background-color: white;
+  width: 145px;
+  height: 68px;
+  border: none;
+  margin: auto;
+  margin: 10px;
+}
+#textBedrag {
+  margin-bottom: 50px;
+}
+input, select, textarea {
+  width: 471px;
+  height: 25px;
+  border: none;
+  border-radius: none;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+select {
+  width: 475px;
+}
+textarea {
+  height: 55px;
+}
+
+/*Voor de mobiele schermen wordt de weergave kleiner*/
+@media screen and (max-width: 500px) {
+  form {
+    width: 320px;
+  }
+  input, select, textarea {
+    width: 295px;
+  }
+  select {
+    width: 299px;
+  }
+  #doneren p {
+    width: 300px;
+  }
+}
+
+
+/*De sectie voor de deelnemers*/
+#deelnemers {
+}
+/*De sectie voor de hele zoekbalk*/
+#searchBar {
+}
+/*Ieder vak per deelnemer*/
+.deelnemerVak {
+  width: 300px;
+  height: 300px;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  margin: auto;
+}

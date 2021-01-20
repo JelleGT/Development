@@ -1,0 +1,106 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+h1 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+/*Opmaak voor de menubalk*/
+nav {
+  margin-bottom: 70px;
+}
+li {
+  display: inline;
+  margin-left: 62px;
+  margin-right: 62px;
+  font-size: 14px;
+  font-weight: bold;
+}
+ul {
+  text-align: center;
+  padding: 0;
+}
+
+/*Voor de roze lijn onder het kopje, verandert met js bij klikken op ander kopje*/
+.selectedItem {
+    border-bottom: 2px solid #F7A1C0;
+}
+form {
+  display: block;
+  margin: 0 auto;
+  background-color: rgba(219, 39, 52, 0.2);
+  border-radius: 5px;
+  width: 582px;
+  height: 630px;
+}
+/*Maakt de titel van de select options niet-klikbaar met andere kleur*/
+.no {
+  font-weight: bold;
+  color: grey;
+  background-color: lightgrey
+}
+/*Maakt de standaard grootte voor de inputvakken*/
+select, input{
+  width: 540px;
+  height: 65px;
+  color: grey;
+  border: 1px grey solid;
+  border-radius: 5px;
+  margin: 18px;
+}
+/*De selectvakken zijn iets groter, vanwege de standaard opmaakt in html heb ik deze iets groter moeten maken vergeleken met de inputvakken. Nu zijn deze even groot in de pagina*/
+.large {
+  height: 69px;
+  width: 545px;
+}
+
+/*Deze 4 zorgen ervoor dat de checkbox en de tekst van de privacyovereenkomst op een lijn samenkomen*/
+#privacy {
+  width: 575px;
+  margin: auto;
+  margin-top: 20px;
+}
+.box, .akrd {
+  float: left;
+}
+.box {
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  margin-top: 8px;
+}
+.akrd {
+  padding-left: 20px;
+}
+
+/*Standaard opmaak voor de knop in de website*/
+.knop {
+  display: block;
+  height: 35px;
+  width: 160px;
+  border: 0px grey solid;
+  background-color: #DB2734;
+  color: white;
+  font-weight: bold;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 120px;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.1);
+}
+a {
+  color: #DB2734;
+}
+
+/*Opmaak voor de tekst na het aanmelden (is pas zichtbaar na de volgende stap)*/
+#textDank {
+  font-size: 14px;
+  color: black;
+  font-weight: normal;
+  text-align: center;
+}
+p {
+  font-weight: bold;
+  color: grey;
+}

@@ -1,0 +1,29 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+h1 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-top: 40px;
+}
+h2 {
+  font-size: 14px;
+  font-weight: bold;
+}
+p {
+  font-size: 14px;
+}
+section {
+  float: left;
+  margin: auto;
+  width: 40%;
+  margin-left: 5%;
+  margin-right: 5%;
+  min-width: 300px;
+}
+img {
+  display: block;
+  width: 90%;
+  margin: auto;
+  min-width: 280px;
+}

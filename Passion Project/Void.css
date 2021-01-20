@@ -180,6 +180,7 @@ nav {
   display: none;
   margin-left: 10px;
   margin-right: 10px;
+  height: 100px;
 }
 .characterInfo, .worldInfo {
   margin-bottom: 50px;
